@@ -1,0 +1,111 @@
+.tools {
+  width: 100%;
+  height: 100vh;
+}
+.tools-title {
+  width: 100%;
+  height: 15%;
+  font-size: 24px;
+  color: #00337c;
+  font-weight: 700;
+  display: flex;
+  background-color: violet;
+  justify-content: center;
+  align-items: end;
+}
+.tools-container {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 50px;
+  padding-top: 10px;
+}
+.tools-card {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.tools-card .face {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 125px;
+  height: 125px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+}
+.tools-card .face.front {
+  background: #00337c;
+  border-radius: 6px;
+}
+.tools-card:hover .face.front {
+  transform: perspective(500px) rotateY(180deg);
+}
+.tools-card .face.back {
+  width: 115px;
+  height: 115px;
+  position: absolute;
+  top: 0;
+  background: white;
+  color: #00337c;
+  transform: perspective(500px) rotateY(180deg);
+  border: 5px solid #00337c;
+  border-radius: 6px;
+}
+.tools-card:hover .face.back {
+  transform: perspective(500px) rotateY(360deg);
+}
+.tools-card .face h2 {
+  font-size: 12px;
+  transform: perspective(500px) translateZ(50px);
+}
+.tools-card .face img {
+  width: 60%;
+  transform: perspective(500px) translateZ(50px);
+}
+.tools-card .face #figma {
+  width: 40%;
+}
+
+/* UKURAN TABLET */
+@media (min-width: 768px) {
+  .tools-title {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 32px;
+  }
+  .tools-container {
+    height: 85%;
+    gap: 120px;
+    row-gap: 20px;
+  }
+  .tools-card .face {
+    width: 200px;
+    height: 200px;
+  }
+  .tools-card .face.back {
+    width: 187px;
+    height: 187px;
+    border: 7px solid;
+  }
+  .tools-card .face h2 {
+    font-size: 20px;
+  }
+}
+
+/* UKURAN LAPTOP */
+@media (min-width: 1024px) {
+  .tools-container {
+    gap: 250px;
+    row-gap: 0;
+  }
+}

@@ -1,0 +1,210 @@
+.certificate {
+  width: 100%;
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-title {
+  width: 100%;
+  height: 120px;
+  font-size: 24px;
+  color: #00337c;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.certificate-container {
+  width: 100%;
+  height: 1000px;
+  box-sizing: border-box;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.certificate-card {
+  width: 300px;
+  height: 230px;
+  background-color: #00337c;
+  position: relative;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.certificate-content {
+  width: 100%;
+  height: 190px;
+  position: relative;
+  background-color: white;
+  display: flex;
+  border: 1px solid #00337c;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-content img {
+  width: 75%;
+  object-fit: contain;
+  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+.certificate-content .certificate-icon {
+  cursor: pointer;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  font-size: 15px;
+}
+.certificate-detail {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.certificate-detail .certificate-gambar {
+  width: 350px;
+}
+.certificate-detail .certificate-gambar img {
+  width: 100%;
+}
+.certificate-close {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70vh;
+  cursor: pointer;
+}
+.certificate-button {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.certificate-button button{
+  width: 200px;
+  height: 50px;
+  margin: 0 10px;
+  border-radius: 6px;
+  border: 3px solid #13005a;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  transition: 0.3 ease all;
+  z-index: 1;
+  gap: 5px;
+}
+.certificate-button a{
+  color: #13005a;
+}
+.certificate-button button:before {
+  content: "";
+  transition: 0.3 ease all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  opacity: 0;
+  background: #13005a;
+  z-index: -1;
+}
+.certificate-button button:hover a,
+.certificate-button button a:focus {
+  color: white;
+}
+.certificate-button button:hover:before,
+.certificate-button button:focus:before {
+  transition: 0.3s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+.certificate-button button:not(:hover):before {
+  transition: 0.3s all ease;
+  right: 100%;
+  opacity: 0;
+}
+/* UKURAN TABLET */
+@media (min-width: 768px) {
+  .certificate {
+    height: 100vh;
+  }
+  .certificate-title {
+    height: 15%;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    font-size: 32px;
+    background-color: wheat;
+  }
+  .certificate-container {
+    height: 85%;
+    display: grid;
+    grid-template-areas:
+      "topleft topright"
+      "bottomleft bottomright";
+    gap: 50px;
+    background-color: yellow;
+  }
+  .certificate-card:nth-child(1) {
+    grid-area: "topleft";
+  }
+  .certificate-card:nth-child(2) {
+    grid-area: "topright";
+  }
+  .certificate-card:nth-child(3) {
+    grid-area: "bottomleft";
+  }
+  .certificate-card:nth-child(4) {
+    grid-area: "bottomright";
+  }
+  .certificate-detail .certificate-gambar {
+    width: 600px;
+  }
+  .certificate-detail .certificate-gambar img {
+    width: 100%;
+  }
+}
+
+/* UKURAN LAPTOP */
+@media (min-width: 1024px) {
+  .certificate {
+    height: 970px;
+  }
+  .certificate-container {
+    padding: 50px;
+  }
+  .certificate-card {
+    width: 400px;
+    height: 300px;
+  }
+  .certificate-content {
+    height: 250px;
+  }
+  .certificate-detail .certificate-gambar {
+    width: 700px;
+  }
+  .certificate-detail .certificate-gambar img {
+    width: 100%;
+  }
+}

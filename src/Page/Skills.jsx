@@ -5,7 +5,7 @@ import gambar2 from "../Assets/26432583_backend_1.jpg";
 
 const Skills = () => {
   return (
-    <article className="skills" id="skills">
+    <section className="skills" id="skills">
       <div className="skill-judul">SKILLS</div>
       <div className="skill-container">
         <div className="skill-content">
@@ -29,7 +29,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 };
 

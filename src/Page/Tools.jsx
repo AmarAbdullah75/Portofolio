@@ -15,7 +15,7 @@ const Tools = () => {
     { image: tailwind, title: "TAILWIND CSS" },
   ];
   return (
-    <article className="tools" id="tools">
+    <section className="tools" id="tools">
       <div className="tools-title">TOOLS</div>
       <div className="tools-container">
         {tools.map((item) => {
@@ -31,7 +31,7 @@ const Tools = () => {
           );
         })}
       </div>
-    </article>
+    </section>
   );
 };
 

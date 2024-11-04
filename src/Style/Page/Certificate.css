@@ -1,210 +1,399 @@
 .certificate {
-  width: 100%;
-  /* height: 100vh; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .certificate-title {
-  width: 100%;
-  height: 120px;
-  font-size: 24px;
-  color: #00337c;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: end;
+    width: 100%;
+    height: 120px;
+    font-size: 24px;
+    color: #00337c;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 .certificate-container {
-  width: 100%;
-  height: 1000px;
-  box-sizing: border-box;
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+    width: 100%;
+    height: 1000px;
+    box-sizing: border-box;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 .certificate-card {
-  width: 300px;
-  height: 230px;
-  background-color: #00337c;
-  position: relative;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+    width: 300px;
+    height: 230px;
+    background-color: #00337c;
+    position: relative;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 .certificate-content {
-  width: 100%;
-  height: 190px;
-  position: relative;
-  background-color: white;
-  display: flex;
-  border: 1px solid #00337c;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 190px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    border: 1px solid #00337c;
+    justify-content: center;
+    align-items: center;
 }
 .certificate-content img {
-  width: 75%;
-  object-fit: contain;
-  box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+    width: 75%;
+    object-fit: contain;
+    box-shadow: -2px 2px 2px 0 rgba(0, 0, 0, 0.5);
 }
 .certificate-content .certificate-icon {
-  cursor: pointer;
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 15px;
 }
 .certificate-detail {
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 .certificate-detail .certificate-gambar {
-  width: 350px;
+    width: 350px;
 }
 .certificate-detail .certificate-gambar img {
-  width: 100%;
+    width: 100%;
 }
 .certificate-close {
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 70vh;
-  cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 70vh;
+    cursor: pointer;
 }
 .certificate-button {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.certificate-button button{
-  width: 200px;
-  height: 50px;
-  margin: 0 10px;
-  border-radius: 6px;
-  border: 3px solid #13005a;
-  background-color: white;
-  font-size: 16px;
-  font-weight: 600;
-  position: relative;
-  transition: 0.3 ease all;
-  z-index: 1;
-  gap: 5px;
+.certificate-button button {
+    width: 200px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 6px;
+    border: 3px solid #13005a;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3 ease all;
+    z-index: 1;
+    gap: 5px;
 }
-.certificate-button a{
-  color: #13005a;
+.certificate-button a {
+    color: #13005a;
 }
 .certificate-button button:before {
-  content: "";
-  transition: 0.3 ease all;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 100%;
-  bottom: 0;
-  opacity: 0;
-  background: #13005a;
-  z-index: -1;
+    content: '';
+    transition: 0.3 ease all;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    opacity: 0;
+    background: #13005a;
+    z-index: -1;
 }
-.certificate-button button:hover a,
-.certificate-button button a:focus {
-  color: white;
+.certificate-button button:hover,
+.certificate-button button:focus {
+    color: white;
 }
 .certificate-button button:hover:before,
 .certificate-button button:focus:before {
-  transition: 0.3s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+    transition: 0.3s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
 }
 .certificate-button button:not(:hover):before {
-  transition: 0.3s all ease;
-  right: 100%;
-  opacity: 0;
+    transition: 0.3s all ease;
+    right: 100%;
+    opacity: 0;
 }
 /* UKURAN TABLET */
 @media (min-width: 768px) {
-  .certificate {
-    height: 100vh;
-  }
-  .certificate-title {
-    height: 15%;
-    padding-top: 50px;
-    padding-bottom: 10px;
-    box-sizing: border-box;
-    font-size: 32px;
-    background-color: wheat;
-  }
-  .certificate-container {
-    height: 85%;
-    display: grid;
-    grid-template-areas:
-      "topleft topright"
-      "bottomleft bottomright";
-    gap: 50px;
-    background-color: yellow;
-  }
-  .certificate-card:nth-child(1) {
-    grid-area: "topleft";
-  }
-  .certificate-card:nth-child(2) {
-    grid-area: "topright";
-  }
-  .certificate-card:nth-child(3) {
-    grid-area: "bottomleft";
-  }
-  .certificate-card:nth-child(4) {
-    grid-area: "bottomright";
-  }
-  .certificate-detail .certificate-gambar {
-    width: 600px;
-  }
-  .certificate-detail .certificate-gambar img {
-    width: 100%;
-  }
+    .certificate {
+        height: 100vh;
+    }
+    .certificate-title {
+        height: 15%;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+        font-size: 32px;
+    }
+    .certificate-container {
+        height: 85%;
+        display: grid;
+        grid-template-areas:
+            'topleft topright'
+            'bottomleft bottomright';
+        gap: 50px;
+    }
+    .certificate-card:nth-child(1) {
+        grid-area: 'topleft';
+    }
+    .certificate-card:nth-child(2) {
+        grid-area: 'topright';
+    }
+    .certificate-card:nth-child(3) {
+        grid-area: 'bottomleft';
+    }
+    .certificate-card:nth-child(4) {
+        grid-area: 'bottomright';
+    }
+    .certificate-detail .certificate-gambar {
+        width: 600px;
+    }
+    .certificate-detail .certificate-gambar img {
+        width: 100%;
+    }
 }
 
 /* UKURAN LAPTOP */
 @media (min-width: 1024px) {
-  .certificate {
-    height: 970px;
-  }
-  .certificate-container {
-    padding: 50px;
-  }
-  .certificate-card {
-    width: 400px;
-    height: 300px;
-  }
-  .certificate-content {
-    height: 250px;
-  }
-  .certificate-detail .certificate-gambar {
-    width: 700px;
-  }
-  .certificate-detail .certificate-gambar img {
+    .certificate {
+        height: 970px;
+    }
+    .certificate-container {
+        padding: 50px;
+    }
+    .certificate-card {
+        width: 400px;
+        height: 300px;
+    }
+    .certificate-content {
+        height: 250px;
+    }
+    .certificate-detail .certificate-gambar {
+        width: 700px;
+    }
+    .certificate-detail .certificate-gambar img {
+        width: 100%;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.formbold-main-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px;
+    position: absolute;
+    z-index: 80;
     width: 100%;
-  }
+    background-color: rgba(0, 0, 0, 0.05);
+    height: 100vh; /* Tambahkan agar pop-up penuh ketinggian */
+    transition: all 0.3s ease; /* Animasi saat muncul */
+}
+
+.formbold-form-wrapper {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.75);
+    transform: translateY(-100%); /* Posisi awal di luar tampilan */
+    transition: transform 0.3s ease; /* Animasi saat muncul */
+}
+.formbold-form-wrapper.active {
+    transform: translateY(0); /* Kembali ke posisi normal */
+}
+
+.formbold-steps {
+    padding-bottom: 18px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #dde3ec;
+}
+.formbold-steps ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.formbold-steps li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+}
+.formbold-steps li span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dde3ec;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+}
+.formbold-steps li.active {
+    color: #07074d;
+}
+.formbold-steps li.active span {
+    background: #6a64f1;
+    color: #ffffff;
+}
+
+.formbold-input-flex {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+.formbold-input-flex > div {
+    width: 50%;
+}
+.formbold-form-input {
+    width: 100%;
+    padding: 13px 22px;
+    border-radius: 5px;
+    border: 1px solid #dde3ec;
+    background: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    color: #536387;
+    outline: none;
+    resize: none;
+}
+.formbold-form-input:focus {
+    border-color: #6a64f1;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-form-label {
+    color: #07074d;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.formbold-form-confirm {
+    border-bottom: 1px solid #dde3ec;
+    padding-bottom: 35px;
+}
+.formbold-form-confirm p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    margin-bottom: 22px;
+    width: 75%;
+}
+.formbold-form-confirm > div {
+    display: flex;
+    gap: 15px;
+}
+
+.formbold-confirm-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #ffffff;
+    border: 0.5px solid #dde3ec;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #536387;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.formbold-confirm-btn {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+}
+.formbold-confirm-btn.active {
+    background: #6a64f1;
+    color: #ffffff;
+}
+
+.formbold-form-step-1,
+.formbold-form-step-2,
+.formbold-form-step-3 {
+    display: none;
+}
+.formbold-form-step-1.active,
+.formbold-form-step-2.active,
+.formbold-form-step-3.active {
+    display: block;
+}
+
+.formbold-form-btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 25px;
+}
+.formbold-back-btn {
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+    color: #07074d;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    display: none;
+}
+.formbold-back-btn.active {
+    display: block;
+}
+.formbold-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 500;
+    background-color: #6a64f1;
+    color: white;
+    cursor: pointer;
+}
+.formbold-btn:hover {
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
 }
